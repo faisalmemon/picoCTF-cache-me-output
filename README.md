@@ -103,67 +103,17 @@ There is a quick way to find out what the binary is doing at a library-call pers
 kali-amd64# ltrace -x "@libc.so.6" -o out1.txt ./heapedit_patched 
 kali-amd64# cat out1.txt
 __libc_start_main@libc.so.6(0x400807, 1, 0x7ffd92273828, 0x400a80 <unfinished ...>
-__cxa_atexit@libc.so.6(0x7f2c6ee109f0, 0, 0, 0x400a80 <unfinished ...>
-__new_exitfn@libc.so.6(0x7f2c6edeb718, 1, 0, 0x400a80)                                      = 0x7f2c6edecd90
-<... __cxa_atexit resumed> )                                                                = 0
-_setjmp@libc.so.6(0x7ffd92273770, 0, 0x7f2c6f027760, 0x400a80 <unfinished ...>
-__sigsetjmp@libc.so.6(0x7ffd92273770, 0, 0x7f2c6f027760, 0x400a80 <unfinished ...>
-__sigjmp_save@libc.so.6(0x7ffd92273770, 0, 0xd1b3afe03b07f9d7, 0x400a80)                    = 0
-<... __sigsetjmp resumed> )                                                                 = 0
-<... _setjmp resumed> )                                                                     = 0
-setbuf(0x7f2c6edec760, 0 <unfinished ...>
-setbuf@libc.so.6(0x7f2c6edec760, 0 <unfinished ...>
-setbuffer@libc.so.6(0x7f2c6edec760, 0, 8192 <unfinished ...>
-_IO_file_setbuf@libc.so.6(0x7f2c6edec760, 0, 0, 2880 <unfinished ...>
-_IO_default_setbuf@libc.so.6(0x7f2c6edec760, 0, 0, 2880 <unfinished ...>
-_IO_file_sync@libc.so.6(0x7f2c6edec760, 0, 0x7f2c6ede7760, 2880)                            = 0
-<... _IO_default_setbuf resumed> )                                                          = 0x7f2c6edec760
-<... _IO_file_setbuf resumed> )                                                             = 0x7f2c6edec760
-_IO_file_setbuf@libc.so.6(0x7f2c6edec760, 0, 0, 2880 <unfinished ...>
-_IO_default_setbuf@libc.so.6(0x7f2c6edec760, 0, 0, 2880 <unfinished ...>
-_IO_file_sync@libc.so.6(0x7f2c6edec760, 0, 0x7f2c6ede7760, 2880)                            = 0
-<... _IO_default_setbuf resumed> )                                                          = 0x7f2c6edec760
-<... _IO_file_setbuf resumed> )                                                             = 0x7f2c6edec760
-<... setbuffer resumed> )                                                                   = <void>
-<... setbuf resumed> )                                                                      = <void>
-<... setbuf resumed> )                                                                      = <void>
+.
+.
+.
 fopen("flag.txt", "r" <unfinished ...>
 fopen@libc.so.6("flag.txt", "r" <unfinished ...>
 malloc@libc.so.6(552 <unfinished ...>
-malloc_hook_ini@libc.so.6(552, 0x7f2c6ea7eeba, 0x7f2c6eded8c0, 2880 <unfinished ...>
-ptmalloc_init.part.0@libc.so.6(552, 0x7f2c6ea7eeba, 0xffffffff, 2880 <unfinished ...>
-_dl_addr@libc.so.6(0x7f2c6ea91730, 0x7ffd922735e0, 0x7ffd922735d0, 0)                       = 1
-<... ptmalloc_init.part.0 resumed> )                                                        = 0
-tcache_init.part.4@libc.so.6(10, 0x7ffd922735d8, -72, 0 <unfinished ...>
-_int_malloc@libc.so.6(0x7f2c6edebc40, 576, -72, 0 <unfinished ...>
-sysmalloc@libc.so.6(592, 0x7f2c6edebc40, 0, 0x7f2c6edebca0 <unfinished ...>
-__default_morecore@libc.so.6(0x21000, 0x7f2c6edebc40, 0x20270, 0 <unfinished ...>
-sbrk@libc.so.6(135168 <unfinished ...>
-brk@libc.so.6(0, 0x7f2c6edebc40, 0x20270, 0)                                                = 0
-brk@libc.so.6(0x25a1000, 0x7f2c6edebc40, 0x2580000, 0x7f2c6eb165b9)                         = 0
-<... sbrk resumed> )                                                                        = 0x2580000
-<... __default_morecore resumed> )                                                          = 0x2580000
-__default_morecore@libc.so.6(0, 0x25a1000, 0x2580000, 0x21000 <unfinished ...>
-sbrk@libc.so.6(0)                                                                           = 0x25a1000
-<... __default_morecore resumed> )                                                          = 0x25a1000
-<... sysmalloc resumed> )                                                                   = 0x2580010
-<... _int_malloc resumed> )                                                                 = 0x2580010
-<... tcache_init.part.4 resumed> )                                                          = 0
-_int_malloc@libc.so.6(0x7f2c6edebc40, 552, 0, 0x2580010)                                    = 0x2580260
-<... malloc_hook_ini resumed> )                                                             = 0x2580260
-<... malloc resumed> )                                                                      = 0x2580260
-_IO_no_init@libc.so.6(0x2580260, 0, 0, 0x2580350 <unfinished ...>
-_IO_old_init@libc.so.6(0x2580260, 0, 0, 0x2580350)                                          = 0x2580340
-<... _IO_no_init resumed> )                                                                 = 0x2580340
-_IO_new_file_init_internal@libc.so.6(0x2580260, 0xfbad0000, 0, 0x2580350 <unfinished ...>
-_IO_link_in@libc.so.6(0x2580260, 0xfbad0000, 0, 0x2580350)                                  = 0
-<... _IO_new_file_init_internal resumed> )                                                  = 0
-_IO_file_fopen@libc.so.6(0x2580260, 0x400b0a, 0x400b08, 1 <unfinished ...>
-open@libc.so.6("flag.txt", 0, 0666)                                                         = -1
-<... _IO_file_fopen resumed> )                                                              = 0
-_IO_un_link@libc.so.6(0x2580260, 0x400b0a, -128, 0)                                         = 0
-free@libc.so.6(0x2580260)                                                                   = <void>
+.
+.
 <... fopen resumed> )                                                                       = 0
+.
+.
 <... fopen resumed> )                                                                       = 0
 fgets( <unfinished ...>
 fgets@libc.so.6( <unfinished ...>
@@ -171,7 +121,7 @@ fgets@libc.so.6( <unfinished ...>
 +++ killed by SIGSEGV +++
 ```
 
-This shows that the binary needs "flags.txt" and then reading from the non-existant file crashes the program.  So we shall just create a dummy file containing `hello`.  The program then runs.
+This shows that the binary needs "flags.txt", allocates 552 presumably for IO, and then later on, reading from the non-existant file crashes the program.  So we shall just create a dummy file containing `hello`.  The program then runs.
 
 ```
 kali-amd64# ltrace -x "@libc.so.6" -o out2.txt ./heapedit_patched 
@@ -527,7 +477,7 @@ malloc@libc.so.6(128)                                                           
 
 As we can see there are 8 mallocs of size 128, two frees, and another malloc of 128.  The rest we are ignoring (probably file handling code, etc).
 
-Looking for documentation on tcache on the Internet does not turn up much apart from an in-depth analysis, [Azeria](https://azeria-labs.com/heap-exploitation-part-2-glibc-heap-free-bins/)
+Looking for documentation on tcache on the Internet does not turn up much apart from an in-depth analysis at [Azeria Labs Glibc Heap Free Bins](https://azeria-labs.com/heap-exploitation-part-2-glibc-heap-free-bins/)
 
 On the section for t-cache it says:
 > By default, each thread has 64 singly-linked tcache bins. Each bin contains a maximum of 7 same-size chunks ranging from 24 to 1032 bytes on 64-bit systems and 12 to 516 bytes on 32-bit systems.
