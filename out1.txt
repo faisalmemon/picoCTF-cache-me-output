@@ -1,0 +1,314 @@
+__libc_start_main@libc.so.6(0x400807, 1, 0x7ffd3e3fde48, 0x400a80 <unfinished ...>
+__cxa_atexit@libc.so.6(0x7f86842109f0, 0, 0, 0x400a80 <unfinished ...>
+__new_exitfn@libc.so.6(0x7f86841eb718, 1, 0, 0x400a80)                                      = 0x7f86841ecd90
+<... __cxa_atexit resumed> )                                                                = 0
+_setjmp@libc.so.6(0x7ffd3e3fdd90, 0, 0x7f8684427760, 0x400a80 <unfinished ...>
+__sigsetjmp@libc.so.6(0x7ffd3e3fdd90, 0, 0x7f8684427760, 0x400a80 <unfinished ...>
+__sigjmp_save@libc.so.6(0x7ffd3e3fdd90, 0, 0xb06b8c6ea233a926, 0x400a80)                    = 0
+<... __sigsetjmp resumed> )                                                                 = 0
+<... _setjmp resumed> )                                                                     = 0
+setbuf(0x7f86841ec760, 0 <unfinished ...>
+setbuf@libc.so.6(0x7f86841ec760, 0 <unfinished ...>
+setbuffer@libc.so.6(0x7f86841ec760, 0, 8192 <unfinished ...>
+_IO_file_setbuf@libc.so.6(0x7f86841ec760, 0, 0, 2880 <unfinished ...>
+_IO_default_setbuf@libc.so.6(0x7f86841ec760, 0, 0, 2880 <unfinished ...>
+_IO_file_sync@libc.so.6(0x7f86841ec760, 0, 0x7f86841e7760, 2880)                            = 0
+<... _IO_default_setbuf resumed> )                                                          = 0x7f86841ec760
+<... _IO_file_setbuf resumed> )                                                             = 0x7f86841ec760
+_IO_file_setbuf@libc.so.6(0x7f86841ec760, 0, 0, 2880 <unfinished ...>
+_IO_default_setbuf@libc.so.6(0x7f86841ec760, 0, 0, 2880 <unfinished ...>
+_IO_file_sync@libc.so.6(0x7f86841ec760, 0, 0x7f86841e7760, 2880)                            = 0
+<... _IO_default_setbuf resumed> )                                                          = 0x7f86841ec760
+<... _IO_file_setbuf resumed> )                                                             = 0x7f86841ec760
+<... setbuffer resumed> )                                                                   = <void>
+<... setbuf resumed> )                                                                      = <void>
+<... setbuf resumed> )                                                                      = <void>
+fopen("flag.txt", "r" <unfinished ...>
+fopen@libc.so.6("flag.txt", "r" <unfinished ...>
+malloc@libc.so.6(552 <unfinished ...>
+malloc_hook_ini@libc.so.6(552, 0x7f8683e7eeba, 0x7f86841ed8c0, 2880 <unfinished ...>
+ptmalloc_init.part.0@libc.so.6(552, 0x7f8683e7eeba, 0xffffffff, 2880 <unfinished ...>
+_dl_addr@libc.so.6(0x7f8683e91730, 0x7ffd3e3fdc00, 0x7ffd3e3fdbf0, 0)                       = 1
+<... ptmalloc_init.part.0 resumed> )                                                        = 0
+tcache_init.part.4@libc.so.6(10, 0x7ffd3e3fdbf8, -72, 0 <unfinished ...>
+_int_malloc@libc.so.6(0x7f86841ebc40, 576, -72, 0 <unfinished ...>
+sysmalloc@libc.so.6(592, 0x7f86841ebc40, 0, 0x7f86841ebca0 <unfinished ...>
+__default_morecore@libc.so.6(0x21000, 0x7f86841ebc40, 0x20270, 0 <unfinished ...>
+sbrk@libc.so.6(135168 <unfinished ...>
+brk@libc.so.6(0, 0x7f86841ebc40, 0x20270, 0)                                                = 0
+brk@libc.so.6(0x10d4000, 0x7f86841ebc40, 0x10b3000, 0x7f8683f165b9)                         = 0
+<... sbrk resumed> )                                                                        = 0x10b3000
+<... __default_morecore resumed> )                                                          = 0x10b3000
+__default_morecore@libc.so.6(0, 0x10d4000, 0x10b3000, 0x21000 <unfinished ...>
+sbrk@libc.so.6(0)                                                                           = 0x10d4000
+<... __default_morecore resumed> )                                                          = 0x10d4000
+<... sysmalloc resumed> )                                                                   = 0x10b3010
+<... _int_malloc resumed> )                                                                 = 0x10b3010
+<... tcache_init.part.4 resumed> )                                                          = 0
+_int_malloc@libc.so.6(0x7f86841ebc40, 552, 0, 0x10b3010)                                    = 0x10b3260
+<... malloc_hook_ini resumed> )                                                             = 0x10b3260
+<... malloc resumed> )                                                                      = 0x10b3260
+_IO_no_init@libc.so.6(0x10b3260, 0, 0, 0x10b3350 <unfinished ...>
+_IO_old_init@libc.so.6(0x10b3260, 0, 0, 0x10b3350)                                          = 0x10b3340
+<... _IO_no_init resumed> )                                                                 = 0x10b3340
+_IO_new_file_init_internal@libc.so.6(0x10b3260, 0xfbad0000, 0, 0x10b3350 <unfinished ...>
+_IO_link_in@libc.so.6(0x10b3260, 0xfbad0000, 0, 0x10b3350)                                  = 0
+<... _IO_new_file_init_internal resumed> )                                                  = 0
+_IO_file_fopen@libc.so.6(0x10b3260, 0x400b0a, 0x400b08, 1 <unfinished ...>
+open@libc.so.6("flag.txt", 0, 0666)                                                         = 3
+_IO_link_in@libc.so.6(0x10b3260, 0x400b0a, 0, 0)                                            = 0
+__GI_strstr@libc.so.6(0x400b09, 0x7f8683fb4ef7, 0, 0)                                       = 0
+<... _IO_file_fopen resumed> )                                                              = 0x10b3260
+<... fopen resumed> )                                                                       = 0x10b3260
+<... fopen resumed> )                                                                       = 0x10b3260
+fgets( <unfinished ...>
+fgets@libc.so.6( <unfinished ...>
+_IO_getline@libc.so.6(0x10b3260, 0x7ffd3e3fdd10, 63, 10 <unfinished ...>
+__uflow@libc.so.6(0x10b3260, 0x7ffd3e3fdd10, 63, 10 <unfinished ...>
+_IO_default_uflow@libc.so.6(0x10b3260, 0, 0x7f86841e7760, 2880 <unfinished ...>
+_IO_file_underflow@libc.so.6(0x10b3260, 0, 0x7f86841e7760, 2880 <unfinished ...>
+_IO_doallocbuf@libc.so.6(0x10b3260, 0, 0, 2880 <unfinished ...>
+_IO_file_doallocate@libc.so.6(0x10b3260, 0, 0x7f86841e7760, 2880 <unfinished ...>
+_IO_file_stat@libc.so.6(0x10b3260, 0x7ffd3e3fdb00, 0x7f86841e7760, 2880 <unfinished ...>
+_fxstat@libc.so.6(1, 3, 0x7ffd3e3fdb00, 2880)                                               = 0
+<... _IO_file_stat resumed> )                                                               = 0
+malloc@libc.so.6(4096 <unfinished ...>
+_int_malloc@libc.so.6(0x7f86841ebc40, 4096, 0x7ffd3e3fdb00, 0x10b3010)                      = 0x10b3490
+<... malloc resumed> )                                                                      = 0x10b3490
+_IO_setb@libc.so.6(0x10b3260, 0x10b3490, 0x10b4490, 1)                                      = 0xfbad2488
+<... _IO_file_doallocate resumed> )                                                         = 1
+<... _IO_doallocbuf resumed> )                                                              = 1
+_IO_switch_to_get_mode@libc.so.6(0x10b3260, 0x10b3490, 0xfbad2488, 0)                       = 0
+_IO_file_read@libc.so.6(0x10b3260, 0x10b3490, 4096, 0x10b3490 <unfinished ...>
+read@libc.so.6(3, "hello\n", 4096)                                                          = 6
+<... _IO_file_read resumed> )                                                               = 6
+<... _IO_file_underflow resumed> )                                                          = 104
+<... _IO_default_uflow resumed> )                                                           = 104
+<... __uflow resumed> )                                                                     = 104
+__memchr_sse2@libc.so.6(0x10b3491, 10, 5, 0x7f8683f10191)                                   = 0x10b3495
+memcpy@libc.so.6(0x7ffd3e3fdd11, "ello\n", 5)                                               = 0x7ffd3e3fdd11
+<... _IO_getline resumed> )                                                                 = 6
+<... fgets resumed> "hello\n", 64, 0x10b3260)                                               = 0x7ffd3e3fdd10
+<... fgets resumed> "hello\n", 64, 0x10b3260)                                               = 0x7ffd3e3fdd10
+malloc(128 <unfinished ...>
+malloc@libc.so.6(128 <unfinished ...>
+_int_malloc@libc.so.6(0x7f86841ebc40, 128, 0, 0x10b3010)                                    = 0x10b44a0
+<... malloc resumed> )                                                                      = 0x10b44a0
+<... malloc resumed> )                                                                      = 0x10b44a0
+strcat("Congrats! Your flag is: ", "hello\n" <unfinished ...>
+strcat_ifunc@libc.so.6(0x7f8683e1777f, 0x7f8683e0b3b8, 10, 1)                               = 0x7f8683eb93e0
+__strcat_sse2@libc.so.6(0x10b44a0, 0x7ffd3e3fdd10, 0x7ffd3e3fdd10, 0x203a73692067616c)      = 0x10b44a0
+<... strcat resumed> )                                                                      = "Congrats! Your flag is: hello\n"
+malloc(128 <unfinished ...>
+malloc@libc.so.6(128 <unfinished ...>
+_int_malloc@libc.so.6(0x7f86841ebc40, 128, 0, 0x10b3010)                                    = 0x10b4530
+<... malloc resumed> )                                                                      = 0x10b4530
+<... malloc resumed> )                                                                      = 0x10b4530
+strcat("Congrats! Your flag is: ", "hello\n" <unfinished ...>
+__strcat_sse2@libc.so.6(0x10b4530, 0x7ffd3e3fdd10, 0x7ffd3e3fdd10, 0x203a73692067616c)      = 0x10b4530
+<... strcat resumed> )                                                                      = "Congrats! Your flag is: hello\n"
+malloc(128 <unfinished ...>
+malloc@libc.so.6(128 <unfinished ...>
+_int_malloc@libc.so.6(0x7f86841ebc40, 128, 0, 0x10b3010)                                    = 0x10b45c0
+<... malloc resumed> )                                                                      = 0x10b45c0
+<... malloc resumed> )                                                                      = 0x10b45c0
+strcat("Congrats! Your flag is: ", "hello\n" <unfinished ...>
+__strcat_sse2@libc.so.6(0x10b45c0, 0x7ffd3e3fdd10, 0x7ffd3e3fdd10, 0x203a73692067616c)      = 0x10b45c0
+<... strcat resumed> )                                                                      = "Congrats! Your flag is: hello\n"
+malloc(128 <unfinished ...>
+malloc@libc.so.6(128 <unfinished ...>
+_int_malloc@libc.so.6(0x7f86841ebc40, 128, 0, 0x10b3010)                                    = 0x10b4650
+<... malloc resumed> )                                                                      = 0x10b4650
+<... malloc resumed> )                                                                      = 0x10b4650
+strcat("Congrats! Your flag is: ", "hello\n" <unfinished ...>
+__strcat_sse2@libc.so.6(0x10b4650, 0x7ffd3e3fdd10, 0x7ffd3e3fdd10, 0x203a73692067616c)      = 0x10b4650
+<... strcat resumed> )                                                                      = "Congrats! Your flag is: hello\n"
+malloc(128 <unfinished ...>
+malloc@libc.so.6(128 <unfinished ...>
+_int_malloc@libc.so.6(0x7f86841ebc40, 128, 0, 0x10b3010)                                    = 0x10b46e0
+<... malloc resumed> )                                                                      = 0x10b46e0
+<... malloc resumed> )                                                                      = 0x10b46e0
+strcat("Congrats! Your flag is: ", "hello\n" <unfinished ...>
+__strcat_sse2@libc.so.6(0x10b46e0, 0x7ffd3e3fdd10, 0x7ffd3e3fdd10, 0x203a73692067616c)      = 0x10b46e0
+<... strcat resumed> )                                                                      = "Congrats! Your flag is: hello\n"
+malloc(128 <unfinished ...>
+malloc@libc.so.6(128 <unfinished ...>
+_int_malloc@libc.so.6(0x7f86841ebc40, 128, 0, 0x10b3010)                                    = 0x10b4770
+<... malloc resumed> )                                                                      = 0x10b4770
+<... malloc resumed> )                                                                      = 0x10b4770
+strcat("Congrats! Your flag is: ", "hello\n" <unfinished ...>
+__strcat_sse2@libc.so.6(0x10b4770, 0x7ffd3e3fdd10, 0x7ffd3e3fdd10, 0x203a73692067616c)      = 0x10b4770
+<... strcat resumed> )                                                                      = "Congrats! Your flag is: hello\n"
+malloc(128 <unfinished ...>
+malloc@libc.so.6(128 <unfinished ...>
+_int_malloc@libc.so.6(0x7f86841ebc40, 128, 0, 0x10b3010)                                    = 0x10b4800
+<... malloc resumed> )                                                                      = 0x10b4800
+<... malloc resumed> )                                                                      = 0x10b4800
+strcat("Congrats! Your flag is: ", "hello\n" <unfinished ...>
+__strcat_sse2@libc.so.6(0x10b4800, 0x7ffd3e3fdd10, 0x7ffd3e3fdd10, 0x203a73692067616c)      = 0x10b4800
+<... strcat resumed> )                                                                      = "Congrats! Your flag is: hello\n"
+malloc(128 <unfinished ...>
+malloc@libc.so.6(128 <unfinished ...>
+_int_malloc@libc.so.6(0x7f86841ebc40, 128, 0, 0x10b3010)                                    = 0x10b4890
+<... malloc resumed> )                                                                      = 0x10b4890
+<... malloc resumed> )                                                                      = 0x10b4890
+strcat("Sorry! This won't help you: ", "this is a random string." <unfinished ...>
+__strcat_sse2@libc.so.6(0x10b4890, 0x7ffd3e3fdcf0, 0x7ffd3e3fdcf0, 0x7920706c65682074)      = 0x10b4890
+<... strcat resumed> )                                                                      = "Sorry! This won't help you: this"...
+free(0x10b4800 <unfinished ...>
+free@libc.so.6(0x10b4800)                                                                   = <void>
+<... free resumed> )                                                                        = <void>
+free(0x10b4890 <unfinished ...>
+free@libc.so.6(0x10b4890)                                                                   = <void>
+<... free resumed> )                                                                        = <void>
+puts("You may edit one byte in the pro"... <unfinished ...>
+puts@libc.so.6("You may edit one byte in the pro"... <unfinished ...>
+__strlen_sse2@libc.so.6(0x400b18, 0x10b3048, 0x10b3010, 2)                                  = 37
+_IO_file_xsputn@libc.so.6(0x7f86841ec760, 0x400b18, 37, 2880 <unfinished ...>
+_IO_file_overflow@libc.so.6(0x7f86841ec760, 0xffffffff, 2880, 2880 <unfinished ...>
+_IO_do_write@libc.so.6(0x7f86841ec760, 0x7f86841ec7e3, 0, 2)                                = 0
+<... _IO_file_overflow resumed> )                                                           = 0
+_IO_file_write@libc.so.6(0x7f86841ec760, 0x400b18, 37, 0x7f86841ec7e3 <unfinished ...>
+write@libc.so.6(1, "You may edit one byte in the pro"..., 37)                               = 37
+<... _IO_file_write resumed> )                                                              = 37
+<... _IO_file_xsputn resumed> )                                                             = 37
+__overflow@libc.so.6(0x7f86841ec760, 10, 0xffffffff, 0x7f8683f10264 <unfinished ...>
+_IO_file_overflow@libc.so.6(0x7f86841ec760, 10, 0x7f86841e7760, 2880 <unfinished ...>
+_IO_do_write@libc.so.6(0x7f86841ec760, 0x7f86841ec7e3, 1, 0xfbad2887 <unfinished ...>
+_IO_file_write@libc.so.6(0x7f86841ec760, 0x7f86841ec7e3, 1, 0xfbad2887 <unfinished ...>
+write@libc.so.6(1, "\n", 1)                                                                 = 1
+<... _IO_file_write resumed> )                                                              = 1
+<... _IO_do_write resumed> )                                                                = 0
+<... _IO_file_overflow resumed> )                                                           = 10
+<... __overflow resumed> )                                                                  = 10
+<... puts resumed> )                                                                        = 38
+<... puts resumed> )                                                                        = 38
+printf("Address: " <unfinished ...>
+printf@libc.so.6("Address: " <unfinished ...>
+vfprintf@libc.so.6(0x7f86841ec760, "Address: ", 0x7ffd3e3fdbc0 <unfinished ...>
+buffered_vfprintf@libc.so.6(0x7f86841ec760, 0x400b3e, 0x7ffd3e3fdbc0, 0x7f8683f10264 <unfinished ...>
+vfprintf@libc.so.6(0x7ffd3e3fb500, "Address: ", 0x7ffd3e3fdbc0 <unfinished ...>
+__strchrnul_sse2@libc.so.6(0x400b3e, 37, 0x7ffd3e3fdbc0, 0x7f8683f10264)                    = 0x400b47
+_IO_default_xsputn@libc.so.6(0x7ffd3e3fb500, 0x400b3e, 9, 0x7f86841e7760)                   = 9
+<... vfprintf resumed> )                                                                    = 9
+_IO_file_xsputn@libc.so.6(0x7f86841ec760, 0x7ffd3e3fb600, 9, 2880 <unfinished ...>
+_IO_file_overflow@libc.so.6(0x7f86841ec760, 0xffffffff, 2880, 2880 <unfinished ...>
+_IO_do_write@libc.so.6(0x7f86841ec760, 0x7f86841ec7e3, 0, 0xfbad2887)                       = 0
+<... _IO_file_overflow resumed> )                                                           = 0
+_IO_file_write@libc.so.6(0x7f86841ec760, 0x7ffd3e3fb600, 9, 0x7f86841ec7e3 <unfinished ...>
+write@libc.so.6(1, "Address: ", 9)                                                          = 9
+<... _IO_file_write resumed> )                                                              = 9
+<... _IO_file_xsputn resumed> )                                                             = 9
+<... buffered_vfprintf resumed> )                                                           = 9
+<... vfprintf resumed> )                                                                    = 9
+<... printf resumed> )                                                                      = 9
+<... printf resumed> )                                                                      = 9
+__isoc99_scanf(0x400b48, 0x7ffd3e3fdcc0, 0x7f86841ed8c0, 0 <unfinished ...>
+__isoc99_scanf@libc.so.6(0x400b48, 0x7ffd3e3fdcc0, 0x7f86841ed8c0, 0 <unfinished ...>
+_IO_vfscanf@libc.so.6(0x7f86841eba00, 0x400b48, 0x7ffd3e3fdbc0, 0 <unfinished ...>
+__uflow@libc.so.6(0x7f86841eba00, 0xffffffff, 0, 61 <unfinished ...>
+_IO_default_uflow@libc.so.6(0x7f86841eba00, 0, 0x7f86841e7760, 2880 <unfinished ...>
+_IO_file_underflow@libc.so.6(0x7f86841eba00, 0, 0x7f86841e7760, 2880 <unfinished ...>
+_IO_doallocbuf@libc.so.6(0x7f86841eba00, 0, 0, 2880 <unfinished ...>
+_IO_file_doallocate@libc.so.6(0x7f86841eba00, 0, 0x7f86841e7760, 2880 <unfinished ...>
+_IO_file_stat@libc.so.6(0x7f86841eba00, 0x7ffd3e3fd3a0, 0x7f86841e7760, 2880 <unfinished ...>
+_fxstat@libc.so.6(1, 0, 0x7ffd3e3fd3a0, 2880)                                               = 0
+<... _IO_file_stat resumed> )                                                               = 0
+malloc@libc.so.6(1024 <unfinished ...>
+_int_malloc@libc.so.6(0x7f86841ebc40, 1024, 0, 0x10b3010)                                   = 0x10b4920
+<... malloc resumed> )                                                                      = 0x10b4920
+_IO_setb@libc.so.6(0x7f86841eba00, 0x10b4920, 0x10b4d20, 1)                                 = 0xfbad2288
+<... _IO_file_doallocate resumed> )                                                         = 1
+<... _IO_doallocbuf resumed> )                                                              = 1
+_IO_switch_to_get_mode@libc.so.6(0x7f86841eba00, 1, 0x7f86841ed8c0, 0)                      = 0
+_IO_file_read@libc.so.6(0x7f86841eba00, 0x10b4920, 1024, 0x10b4920 <unfinished ...>
+read@libc.so.6(0, "-5144\n", 1024)                                                          = 6
+<... _IO_file_read resumed> )                                                               = 6
+<... _IO_file_underflow resumed> )                                                          = 45
+<... _IO_default_uflow resumed> )                                                           = 45
+<... __uflow resumed> )                                                                     = 45
+_IO_sputbackc@libc.so.6(0x7f86841eba00, 45, 0, 0)                                           = 45
+_IO_sputbackc@libc.so.6(0x7f86841eba00, 10, 5, 0x10b4926)                                   = 10
+__strtol_internal@libc.so.6("-5144", 0x7ffd3e3fd5c8, 10 <unfinished ...>
+____strtol_l_internal@libc.so.6(0x7ffd3e3fd760, 0x7ffd3e3fd5c8, 10, 0)                      = -5144
+<... __strtol_internal resumed> )                                                           = -5144
+<... _IO_vfscanf resumed> )                                                                 = 1
+<... __isoc99_scanf resumed> )                                                              = 1
+<... __isoc99_scanf resumed> )                                                              = 1
+printf("Value: " <unfinished ...>
+printf@libc.so.6("Value: " <unfinished ...>
+vfprintf@libc.so.6(0x7f86841ec760, "Value: ", 0x7ffd3e3fdbc0 <unfinished ...>
+buffered_vfprintf@libc.so.6(0x7f86841ec760, 0x400b4b, 0x7ffd3e3fdbc0, 16 <unfinished ...>
+vfprintf@libc.so.6(0x7ffd3e3fb500, "Value: ", 0x7ffd3e3fdbc0 <unfinished ...>
+__strchrnul_sse2@libc.so.6(0x400b4b, 37, 0x7ffd3e3fdbc0, 16)                                = 0x400b52
+_IO_default_xsputn@libc.so.6(0x7ffd3e3fb500, 0x400b4b, 7, 0x7f86841e7760)                   = 7
+<... vfprintf resumed> )                                                                    = 7
+_IO_file_xsputn@libc.so.6(0x7f86841ec760, 0x7ffd3e3fb600, 7, 2880 <unfinished ...>
+_IO_file_overflow@libc.so.6(0x7f86841ec760, 0xffffffff, 2880, 2880 <unfinished ...>
+_IO_do_write@libc.so.6(0x7f86841ec760, 0x7f86841ec7e3, 0, 0xfbad2887)                       = 0
+<... _IO_file_overflow resumed> )                                                           = 0
+_IO_file_write@libc.so.6(0x7f86841ec760, 0x7ffd3e3fb600, 7, 0x7f86841ec7e3 <unfinished ...>
+write@libc.so.6(1, "Value: ", 7)                                                            = 7
+<... _IO_file_write resumed> )                                                              = 7
+<... _IO_file_xsputn resumed> )                                                             = 7
+<... buffered_vfprintf resumed> )                                                           = 7
+<... vfprintf resumed> )                                                                    = 7
+<... printf resumed> )                                                                      = 7
+<... printf resumed> )                                                                      = 7
+__isoc99_scanf(0x400b53, 0x7ffd3e3fdcbf, 0x7f86841ed8c0, 0 <unfinished ...>
+__isoc99_scanf@libc.so.6(0x400b53, 0x7ffd3e3fdcbf, 0x7f86841ed8c0, 0 <unfinished ...>
+_IO_vfscanf@libc.so.6(0x7f86841eba00, 0x400b53, 0x7ffd3e3fdbc0, 0 <unfinished ...>
+__uflow@libc.so.6(0x7f86841eba00, 0xffffffff, 0, 8194 <unfinished ...>
+_IO_default_uflow@libc.so.6(0x7f86841eba00, 0x10b4926, 0x7f86841e7760, 2880 <unfinished ...>
+_IO_file_underflow@libc.so.6(0x7f86841eba00, 0x10b4926, 0x7f86841e7760, 2880 <unfinished ...>
+_IO_switch_to_get_mode@libc.so.6(0x7f86841eba00, 1, 0x7f86841ed8c0, 2880)                   = 0
+_IO_file_read@libc.so.6(0x7f86841eba00, 0x10b4920, 1024, 0x10b4920 <unfinished ...>
+read@libc.so.6(0, "0\n", 1024)                                                              = 2
+<... _IO_file_read resumed> )                                                               = 2
+<... _IO_file_underflow resumed> )                                                          = 48
+<... _IO_default_uflow resumed> )                                                           = 48
+<... __uflow resumed> )                                                                     = 48
+_IO_sputbackc@libc.so.6(0x7f86841eba00, 48, 0, 1)                                           = 48
+<... _IO_vfscanf resumed> )                                                                 = 1
+<... __isoc99_scanf resumed> )                                                              = 1
+<... __isoc99_scanf resumed> )                                                              = 1
+malloc(128 <unfinished ...>
+malloc@libc.so.6(128)                                                                       = 0x10b4830
+<... malloc resumed> )                                                                      = 0x10b4830
+puts("" <unfinished ...>
+puts@libc.so.6("" <unfinished ...>
+__strlen_sse2@libc.so.6(0x10b4840, 0x10b3048, 0x10b4830, 0x10b3010)                         = 0
+_IO_file_xsputn@libc.so.6(0x7f86841ec760, 0x10b4840, 0, 2880)                               = 0
+__overflow@libc.so.6(0x7f86841ec760, 10, 0, 2880 <unfinished ...>
+_IO_file_overflow@libc.so.6(0x7f86841ec760, 10, 0x7f86841e7760, 2880 <unfinished ...>
+_IO_do_write@libc.so.6(0x7f86841ec760, 0x7f86841ec7e3, 1, 0xfbad2887 <unfinished ...>
+_IO_file_write@libc.so.6(0x7f86841ec760, 0x7f86841ec7e3, 1, 0xfbad2887 <unfinished ...>
+write@libc.so.6(1, "\n", 1)                                                                 = 1
+<... _IO_file_write resumed> )                                                              = 1
+<... _IO_do_write resumed> )                                                                = 0
+<... _IO_file_overflow resumed> )                                                           = 10
+<... __overflow resumed> )                                                                  = 10
+<... puts resumed> )                                                                        = 1
+<... puts resumed> )                                                                        = 1
+exit@libc.so.6(0 <unfinished ...>
+__run_exit_handlers@libc.so.6(0, 0x7f86841eb718, 1, 1 <unfinished ...>
+__call_tls_dtors@libc.so.6(0, 0x7f86841eb718, 1, 1)                                         = 0
+_IO_cleanup@libc.so.6(0x7f8684428968, 1, 0x7f86841e7740, 0 <unfinished ...>
+_IO_flush_all_lockp@libc.so.6(0, 1, 0x7f86841e7740, 0)                                      = 0
+_IO_file_setbuf@libc.so.6(0x10b3260, 0, 0, 1 <unfinished ...>
+_IO_default_setbuf@libc.so.6(0x10b3260, 0, 0, 1 <unfinished ...>
+_IO_file_sync@libc.so.6(0x10b3260, 0, 0x7f86841e7760, 2880)                                 = 0
+<... _IO_default_setbuf resumed> )                                                          = 0x10b3260
+<... _IO_file_setbuf resumed> )                                                             = 0x10b3260
+_IO_file_setbuf@libc.so.6(0x7f86841eba00, 0, 0, 1 <unfinished ...>
+_IO_default_setbuf@libc.so.6(0x7f86841eba00, 0, 0, 1 <unfinished ...>
+_IO_file_sync@libc.so.6(0x7f86841eba00, 0, 0x7f86841e7760, 2880 <unfinished ...>
+_IO_file_seek@libc.so.6(0x7f86841eba00, -1, 1, 2880 <unfinished ...>
+lseek@libc.so.6(0, -1, 1)                                                                   = -1
+<... _IO_file_seek resumed> )                                                               = -1
+<... _IO_file_sync resumed> )                                                               = 0
+<... _IO_default_setbuf resumed> )                                                          = 0x7f86841eba00
+<... _IO_file_setbuf resumed> )                                                             = 0x7f86841eba00
+<... _IO_cleanup resumed> )                                                                 = 0
+_exit@libc.so.6(0 <no return ...>
++++ exited (status 0) +++
